@@ -12,7 +12,7 @@
   </div>
 </nav>
 
-<div class="container">
+<!-- <div class="container">
 <form [formGroup]="searchForm" novalidate>
     <div class="row">
       <div class="col-xs-12 col-md-12">
@@ -27,48 +27,30 @@
       </div>
     </div>
   </form>
-</div>
+</div> -->
 
-<div class="masonry">
-     <div class="item" *ngFor="let photo of photos">
+<div class="container">
+  <div class="search">
+    <mat-form-field>
+      <input matInput placeholder="Flickr Image Search" type="search" [formControl]="searchControl">
+    </mat-form-field>
+  </div>
 
-       <img src="{{photo.url}}">
-        <!-- <div class="item">
-          <span>{photo.title}}</span>
-        </div> -->
-        <!-- <div class="item">
-          Tags
-        </div> -->
-        <!-- <div class="item">
-          Owner + Date Taken
-      </div>  -->
-  </div> 
-</div>
+  <div class="masonry">
+    <div class="item" *ngFor="let photo of photos">
 
-  <!-- <div class="item">
-    <img src="https://w3bits.com/wp-content/uploads/masonry.jpg">
+      <img src="{{photo.url}}">
+
+      <div class="item">
+        <span>{{photo.title}}</span>
+      </div>
+      <div class="item">
+        {{photo.raw}}
+      </div>
+      <div class="item">
+        {{photo.authorname}}
+      </div>
+    </div>
+
 
   </div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-
-  <div class="item"><img src="https://media-cache-ec0.pinimg.com/736x/c3/10/22/c3102281f88237e7a2515099d2e6651f.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div>
-  <div class="item"><img src="https://w3bits.com/wp-content/uploads/masonry.jpg"></div> 
-</div> -->

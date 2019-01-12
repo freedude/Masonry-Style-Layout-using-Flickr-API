@@ -6,6 +6,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './HomePage/home.component';
 import { FlickrService } from './flickr.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {
+  MatFormFieldModule,
+  MatInputModule,
+  MatCardModule,
+} from '@angular/material';
 
 
 
@@ -18,7 +25,11 @@ import { FlickrService } from './flickr.service';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    BrowserAnimationsModule,
   ],
   providers: [FlickrService],
   bootstrap: [AppComponent]

@@ -1,3 +1,12 @@
+.search {
+  .mat-form-field {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 24px;
+    display: block;
+  }
+}
+
 form {
   max-width: 25rem;
   margin: 1rem auto;
@@ -48,3 +57,4 @@ iframe {
     column-count: 4;
   }
 }
+
