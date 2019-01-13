@@ -1,16 +1,12 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Cainthus</a>
     </div>
-    <ul class="nav navbar-nav">
-
-    </ul>
-
   </div>
 </nav>
 
-<div class="container">
+<div class="container" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollThrottle]="300" (scrolled)="onScroll()">
 
   <div class="search">
     <mat-form-field>
@@ -28,13 +24,11 @@
       <div class="well" style="margin-bottom:0px;">
         <span *ngIf="photo.title !== ''"><b>Title:</b><i> {{photo.title}} </i><br /></span>
         <span *ngIf="photo.title == ''"><b>Title:</b><i> User has not entered </i><br /></span>
-        <span><b>Uploaded By:</b></span><i> {{photo.owner}} </i><br />
+        <span><b>Owner:</b></span><i> {{photo.owner}} </i><br />
         <span><b>Date Taken: </b></span><i>{{photo.dateTaken}} </i><br />
         <span><b>Tags : </b></span><i>{{photo.tags}}</i>
       </div>
 
-
     </div>
-
 
   </div>

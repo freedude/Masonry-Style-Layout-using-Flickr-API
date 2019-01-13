@@ -1,7 +1,9 @@
 .navbar{
   border-radius: 0px;
+  background-color: #EF2758;
   .navbar-brand {
     color: white;
+    font-size: 24px;
   }
 }
 
@@ -23,7 +25,7 @@ form {
   margin-bottom: 2%;
 }
 
-/* Masonry container */
+// Masonry container 
 .masonry {
   column-count: 4;
   column-gap: 2rem;
@@ -53,6 +55,7 @@ iframe {
   display: block;
 }
 
+// Mobile Styles
 @media only screen and (min-width: 320px) {
   .masonry {
     column-count: 2;
@@ -65,7 +68,7 @@ iframe {
   }
 }
 
-@media only screen and (min-width: 1024/px) {
+@media only screen and (min-width: 1024px) {
   .masonry {
     column-count: 4;
   }
