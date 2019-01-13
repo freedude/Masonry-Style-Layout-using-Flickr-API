@@ -1,35 +1,17 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">FlickrBox</a>
+      <a class="navbar-brand" href="#">Cainthus</a>
     </div>
     <ul class="nav navbar-nav">
 
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-    </ul>
+
   </div>
 </nav>
 
-<!-- <div class="container">
-<form [formGroup]="searchForm" novalidate>
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <div class="input-group">
-          <input type="search" class="form-control" placeholder="Search" id="txtSearch" formControlName="searchControl" />
-          <div class="input-group-btn">
-            <button class="btn btn-primary" type="submit">
-              <span class="glyphicon glyphicon-search"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </form>
-</div> -->
-
 <div class="container">
+
   <div class="search">
     <mat-form-field>
       <input matInput placeholder="Flickr Image Search" type="search" [formControl]="searchControl">
@@ -39,17 +21,19 @@
   <div class="masonry">
     <div class="item" *ngFor="let photo of photos">
 
-      <img src="{{photo.url}}">
+      <a href="{{photo.url}}">
+        <img src="{{photo.url}}">
+      </a>
 
-      <div class="item">
-        <span>{{photo.title}}</span>
+      <div class="well" style="margin-bottom:0px;">
+        <span *ngIf="photo.title !== ''"><b>Title:</b><i> {{photo.title}} </i><br /></span>
+        <span *ngIf="photo.title == ''"><b>Title:</b><i> User has not entered </i><br /></span>
+        <span><b>Uploaded By:</b></span><i> {{photo.owner}} </i><br />
+        <span><b>Date Taken: </b></span><i>{{photo.dateTaken}} </i><br />
+        <span><b>Tags : </b></span><i>{{photo.tags}}</i>
       </div>
-      <div class="item">
-        {{photo.raw}}
-      </div>
-      <div class="item">
-        {{photo.authorname}}
-      </div>
+
+
     </div>
 
 

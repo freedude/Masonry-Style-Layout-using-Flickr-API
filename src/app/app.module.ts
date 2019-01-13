@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './HomePage/home.component';
 import { FlickrService } from './flickr.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 import {
   MatFormFieldModule,
@@ -30,6 +31,7 @@ import {
     MatInputModule,
     MatCardModule,
     BrowserAnimationsModule,
+    InfiniteScrollModule
   ],
   providers: [FlickrService],
   bootstrap: [AppComponent]

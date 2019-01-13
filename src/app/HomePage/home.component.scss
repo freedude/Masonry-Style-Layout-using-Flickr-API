@@ -1,3 +1,10 @@
+.navbar{
+  border-radius: 0px;
+  .navbar-brand {
+    color: white;
+  }
+}
+
 .search {
   .mat-form-field {
     width: 90%;
@@ -12,25 +19,31 @@ form {
   margin: 1rem auto;
 }
 
+.well span {
+  margin-bottom: 2%;
+}
+
+/* Masonry container */
 .masonry {
-  /* Masonry container */
-  column-count: 5;
-  column-gap: 0.4rem;
+  column-count: 4;
+  column-gap: 2rem;
 }
 
 .item {
   display: inline-block;
   background: #fff;
-  padding: 1.5em;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.5rem;
   width: 100%;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.18);
   border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+}
+
+.photo-title {
+    font-style: italic;
+    margin: 3%;
+    font-size: 18px;
+    color: black;
 }
 
 img,
