@@ -1,8 +1,10 @@
 
 # SearchFlickr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
-Make sure you have LTS version of node installed https://nodejs.org/en/download/
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.  
+
+Make sure you have LTS version of node installed https://nodejs.org/en/download/  
+
 Install Angular CLI with npm install -g @angular/cli
 
 #### Quick Start
