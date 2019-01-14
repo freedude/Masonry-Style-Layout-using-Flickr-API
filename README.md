@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 git clone https://github.com/freedude/code-challenge.git
 or download .zip file and unzip.
 
-cd search-flickr
+cd code-challenge-master
 
 # install the project's dependencies
 run "npm install"
