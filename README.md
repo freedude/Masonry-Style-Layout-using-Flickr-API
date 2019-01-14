@@ -15,6 +15,8 @@ run "npm install"
 
 # starts the application in dev mode and watches your files for livereload
 ng serve
+if you get a 'ng' is not recognised as an internal or external command error, do:
+npm run ng serve
 ```
 
 
