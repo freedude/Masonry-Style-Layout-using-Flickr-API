@@ -12,7 +12,7 @@ Install Angular CLI with npm install -g @angular/cli
 git clone https://github.com/freedude/code-challenge.git
 or download .zip file and unzip.
 
-cd code-challenge-master
+cd Masonry-Style-Layout-using-Flickr-API-master
 
 # install the project's dependencies
 run "npm install"
